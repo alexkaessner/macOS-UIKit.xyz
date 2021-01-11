@@ -1,0 +1,258 @@
+:root {
+	--section-padding: 60px;
+}
+
+body {
+	background-color: white;
+
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	font-size: 18px;
+	color: #000000;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+	padding: 0;
+	margin: 0;
+}
+
+section {
+	position: relative;
+}
+
+p {
+	color: rgba(0, 0, 0, 0.7);
+	line-height: 1.25em;
+	letter-spacing: 0.005em;
+}
+
+a {
+	color: #094FD1;
+	text-decoration-color: rgba(0, 0, 0, 0.15);
+	text-decoration-skip-ink: auto;
+}
+
+a:hover {
+	text-decoration-color: #094FD1;
+}
+
+.text-center {
+	text-align: center;
+}
+
+h1 {
+	font-size: 60px;
+	font-weight: 800;
+	letter-spacing: 0.02em;
+}
+
+h2 {
+	font-size: 42px;
+	font-weight: 800;
+	letter-spacing: 0.02em;
+}
+
+h3 {
+	font-size: 26px;
+	font-weight: 800;
+	letter-spacing: 0.02em;
+}
+
+h1>span, h2>span {
+	font-weight: normal;
+}
+
+.footnote {
+	font-size: 10px;
+}
+
+button {
+	max-width: 340px;
+	height: 50px;
+	
+	color: #FFF;
+	font-size: 22px;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	
+	background: #007AFF;
+	background-image: linear-gradient(180deg, #2E91FF 0%, #007AFF 100%);
+	box-shadow: 0 1px 2px 0 rgba(0,122,255,0.40);
+	border-radius: 10px;
+	
+	border: none;
+	
+	cursor: pointer;
+}
+
+button:hover {
+	box-shadow: 0 2px 8px 0 rgba(0,122,255,0.40);
+}
+
+button:active {
+	background-image: linear-gradient(0deg, #2E91FF 0%, #007AFF 100%);
+	box-shadow: none;
+}
+
+section:not(#hero) {
+	padding: var(--section-padding) 0;
+}
+
+.section-container {
+	max-width: 1000px;
+	padding: 0 20px;
+	margin: auto;
+}
+
+.flex-container {
+	display: flex;
+}
+
+.flex-container>div {
+	flex: 1 1 0px;
+	margin: 0 10px;
+}
+
+.flex-vertical-center {
+	display: flex;
+	flex-flow: column;
+	align-self: center;
+}
+
+
+
+/* ––––––––– HERO –––––––––– */
+
+#hero {
+	width: 100%;
+	height: 900px;
+	background: url("graphics/macos-wallpaper_light.jpg");
+	background-size: cover;
+}
+
+#hero-box {
+	max-width: 530px;
+	margin: auto;
+	padding: 20px 40px;
+	
+	background: rgba(249,249,249,0.70);
+	box-shadow: 0 6px 20px 0 rgba(0,0,0,0.25);
+	border-radius: 30px;
+	-webkit-backdrop-filter: blur(20px);
+	backdrop-filter: blur(20px);
+}
+
+#hero-box h1 {
+	margin: 10px 0;
+}
+
+#hero-box p {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+#hero-box .intro-text {
+	width: 90%;
+	margin: 40px auto;
+}
+
+#hero-box .sketch-flag {
+	align-items: center;
+	justify-content: center;
+	
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+#hero-box .sketch-flag img {
+	margin-right: 6px;
+}
+
+#hero-box button {
+	width: 100%;
+}
+
+
+
+/* ––––––––– ALL ELEMENTS –––––––––– */
+#features {
+	padding-top: calc(var(--section-padding)*2) !important;
+}
+
+#features-box {
+	position: relative;
+	max-width: 740px;
+	margin: auto;
+	padding: 2px 50px 50px 50px;
+	
+	background: #ECECEC;
+	background-image: linear-gradient(180deg, rgba(255,255,255,0.00) 0%, #FFFFFF 100%);
+	box-shadow: 0 0 1px 0 rgba(0,0,0,0.60), 0 10px 30px 0 rgba(0,0,0,0.15), 0 20px 50px 0 rgba(0,0,0,0.30);
+	border-radius: 20px;
+}
+
+#features-box .flex-container {
+	flex-flow: row wrap;
+}
+
+#features-box>.flex-container>div {
+	width: calc(50% - 20px);
+	display: flex;
+	flex-direction: row;
+	line-height: 24px;
+	flex: none;
+	margin: 0;
+	padding: 0 10px;
+}
+
+#features-box>.flex-container img {
+	margin-right: 12px;
+}
+
+
+
+/* ––––––––– ALL ELEMENTS –––––––––– */
+#elements {
+	max-width: 1440px;
+}
+
+#elements img {
+	width: 100%;
+	max-width: 1440px;
+}
+
+
+
+/* ––––––––– DOWNLOAD –––––––––– */
+#download {
+	padding-bottom: calc(var(--section-padding)*2) !important;
+}
+
+#download h2 {
+	margin: 0px 0;
+}
+
+
+
+/* ––––––––– FOOTER –––––––––– */
+#footer {
+	background-image: linear-gradient(180deg, #E9F3FF 0%, #FFFFFF  100%);
+}
+
+.copyright {
+	margin: var(--section-padding) auto;
+}
+
+.made-by {
+	color: #000000;
+	font-weight: 800;
+}
+
+footer {
+	font-size: 13px;
+	font-weight: bold;
+	color: rgba(0,0,0,0.2);
+	line-height: 16px;
+	
+	padding: 20px 0;
+}
