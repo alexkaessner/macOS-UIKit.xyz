@@ -81,16 +81,16 @@ h1>span, h2>span {
 	font-size: 10px;
 }
 
-button {
-	max-width: 340px;
-	height: 50px;
-	padding: 1px 20px;
+.button {
+	max-width: 300px;
+	padding: 12px 20px;
 	
 	color: #FFF;
 	font-size: 22px;
 	text-align: center;
 	font-weight: bold;
 	letter-spacing: 0.05em;
+	text-decoration: none;
 	
 	background: #007AFF;
 	background-image: linear-gradient(180deg, #2E91FF 0%, #007AFF 100%);
@@ -102,17 +102,13 @@ button {
 	cursor: pointer;
 }
 
-button:hover {
+.button:hover {
 	box-shadow: 0 2px 8px 0 rgba(0,122,255,0.40);
 }
 
-button:active {
+.button:active {
 	background-image: linear-gradient(0deg, #2E91FF 0%, #007AFF 100%);
 	box-shadow: none;
-}
-
-button:focus {
-	outline: 3px solid rgba(0,103,244,0.25);
 }
 
 .section-container {
@@ -162,6 +158,8 @@ button:focus {
 }
 
 #hero-box {
+	display: flex;
+	flex-direction: column;
 	max-width: 530px;
 	margin: auto;
 	padding: 20px 40px;
@@ -211,8 +209,9 @@ button:focus {
 	margin-right: 6px;
 }
 
-#hero-box button {
+#hero-box .button {
 	width: 100%;
+	margin: auto;
 }
 
 #menubar {
