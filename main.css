@@ -274,14 +274,15 @@ button:focus {
 
 #features-box .flex-container {
 	flex-flow: row wrap;
+	justify-content: center;
 }
 
 #features-box>.flex-container>div {
-	width: calc(50% - 20px);
 	display: flex;
-	flex-direction: row;
-	line-height: 24px;
 	flex: none;
+	align-items: center;
+	
+	line-height: 24px;
 	margin: 0;
 	padding: 0 10px;
 }
@@ -289,7 +290,6 @@ button:focus {
 #features-box>.flex-container img {
 	margin-right: 12px;
 }
-
 
 
 /* ––––––––– ALL ELEMENTS –––––––––– */
