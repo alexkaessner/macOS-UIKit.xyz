@@ -1,5 +1,6 @@
 :root {
 	--section-padding: 60px;
+	--mobile-padding: 20px;
 }
 
 body {
@@ -28,6 +29,10 @@ img {
 
 section {
 	position: relative;
+}
+
+section:not(#hero) {
+	padding: var(--section-padding) var(--mobile-padding);
 }
 
 p {
@@ -79,6 +84,7 @@ h1>span, h2>span {
 button {
 	max-width: 340px;
 	height: 50px;
+	padding: 1px 20px;
 	
 	color: #FFF;
 	font-size: 22px;
@@ -105,13 +111,8 @@ button:active {
 	box-shadow: none;
 }
 
-section:not(#hero) {
-	padding: var(--section-padding) 0;
-}
-
 .section-container {
 	max-width: 1000px;
-	padding: 0 20px;
 	margin: auto;
 }
 
@@ -130,6 +131,20 @@ section:not(#hero) {
 	align-self: center;
 }
 
+@media only screen and (max-width: 720px) {
+	.flex-container {
+		flex-flow: column;
+	}
+	
+	#download {
+		text-align: center;
+	}
+	
+	#download .section-container>div:first-child {
+		margin-bottom: var(--section-padding);
+	}
+}
+
 
 
 /* ––––––––– HERO –––––––––– */
@@ -139,6 +154,7 @@ section:not(#hero) {
 	height: 900px;
 	background: url("graphics/macos-wallpaper_light.jpg");
 	background-size: cover;
+	background-position: center;
 }
 
 #hero-box {
@@ -152,6 +168,13 @@ section:not(#hero) {
 	
 	-webkit-backdrop-filter: blur(20px);
 	backdrop-filter: blur(20px);
+}
+
+@media only screen and (max-width: 650px) {
+	#hero-box {
+		margin-left: var(--mobile-padding);
+		margin-right: var(--mobile-padding);
+	}
 }
 
 #hero-box h1 {
@@ -210,6 +233,12 @@ section:not(#hero) {
 	
 	-webkit-backdrop-filter: blur(50px);
 	backdrop-filter: blur(50px);
+}
+
+@media only screen and (max-width: 1372px) {
+	#dock {
+		margin: 5px var(--mobile-padding);
+	}
 }
 
 
