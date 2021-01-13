@@ -132,8 +132,12 @@ h1>span, h2>span {
 }
 
 @media only screen and (max-width: 720px) {
-	.flex-container {
+	.flex-container:not(.sketch-flag) {
 		flex-flow: column;
+	}
+	
+	.flex-container>div {
+		flex: none;
 	}
 	
 	#download {
