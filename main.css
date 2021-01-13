@@ -155,6 +155,7 @@ h1>span, h2>span {
 	background: url("graphics/macos-wallpaper_light.jpg");
 	background-size: cover;
 	background-position: center;
+	overflow: hidden;
 }
 
 #hero-box {
